@@ -1,14 +1,13 @@
 package com.test.demo.notificador.services;
 
-import org.springframework.beans.factory.annotation.Value;
-import org.springframework.context.annotation.Primary;
+//import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
 
 import com.test.demo.notificador.configs.NotifyConfig;
 
 @Service
 public class EmailService {
-  private String email;
+  //private String email;
   private NotifyConfig config;
 
   // public EmailService(@Value("${notificador.email}") String email) {
