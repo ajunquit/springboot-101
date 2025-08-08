@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Saludo</title>
+</head>
+<body>
+    <form action="#" th:action="@{/clients/view-greet}" method="post">
+        <label>Your name:</label>
+        <input type="text" name="name" />
+        <button type="submit">Greet</button>
+    </form>
+
+    <h2 th:if="${name}" th:text="'Hello, ' + ${name} + '!'"></h2>
+</body>
+</html>
